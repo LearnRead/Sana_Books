@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    margin: 0;
+    background: #f0f4f8;
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #1a3d5d;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.book-card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.book-card h2 {
+    color: #1b4d33;
+}
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* pour le style des livres */
+.pancarte, .chapter {
+    background-color: rgba(52, 152, 219, 0.3);
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.pancarte:hover, .chapter:hover {
+    background-color: rgba(52, 152, 219, 0.5);
+}
+
+.detail, .summary {
+    display: none;
+    margin: 5px 0 20px 0;
+    padding: 12px 20px;
+    background-color: #eaf2fb;
+    border-radius: 8px;
+    white-space: pre-line;
+}
+
+.mindmap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1000px;
+    margin: auto;
+}
+
